@@ -1,3 +1,3 @@
 <?php
-  echo "123";
+  system('ls -la');
 ?>
